@@ -49,6 +49,7 @@ nameForm.addEventListener('submit', (e) => {
 
     // display updated data in the current game div
     displayCurrentGameEl();
+    
 });
 
 
@@ -117,11 +118,13 @@ window.addEventListener('', async() => {
     // check if there are any
     if (games) {
         pastGames = games;
-        displayAllGames();
+        
+       
     }
+    displayAllGames(games); 
     // if there are, set those as the initial state of pastGames
     // then display all the games (hint: call displayAllGames())
-
+    
 });
 
 
@@ -140,6 +143,8 @@ function displayCurrentGameEl() {
     
     // append the element to the cleared out current game div
     currentGameEl.append(gameEl);
+
+    
 }
 
 
@@ -154,8 +159,10 @@ function displayAllGames() {
 
         pastGamesEl.append(gameEl);
     } 
+    
     // render and append a past game for each past game in state
 }
 
 
-displayCurrentGameEl();
+
+
