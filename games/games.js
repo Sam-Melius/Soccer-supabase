@@ -112,7 +112,7 @@ logoutButton.addEventListener('click', () => {
 });
 
  // on load . . .
-window.addEventListener('', async() => {
+window.addEventListener('load', async() => {
     // fetch all games
     const games = await getGames();
     // check if there are any
